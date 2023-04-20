@@ -1,18 +1,9 @@
 "use client"
 
 import { GiHamburgerMenu } from "react-icons/gi"
+import { handleToggleNav } from "@/lib/scripts"
 import Link from "next/link"
 import Nav from "./nav"
-
-function handleToggleNav() {
-    let domNav = document.getElementById("nav")
-    if(domNav != null) {
-        if(domNav.classList.contains("hidden"))
-            domNav.classList.remove("hidden")
-        else
-            domNav.classList.add("hidden")
-    }
-}
 
 export default function Header() {
     return (

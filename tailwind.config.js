@@ -15,6 +15,11 @@ module.exports = {
             },
         },
         extend: {
+            lineHeight: {
+                "2xl": "2rem",
+                "4xl": "4rem",
+                "6xl": "6rem",
+            },
             boxShadow: {
                 "aw-dark-4": "0 0 1rem -0.5rem #00010D",
                 "aw-dark-8": "0 0 2rem -1rem #00010D",
