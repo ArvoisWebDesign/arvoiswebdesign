@@ -1,6 +1,6 @@
 import { Analytics } from "@vercel/analytics/react"
 
-import "@/styles/globals.css"
+import "./globals.css"
 
 import React from "react"
 
@@ -55,11 +55,11 @@ export const metadata:Metadata = {
 export default function RootLayout({ children } : { children: React.ReactNode }) {
     return (
         <html lang="fr" className={importedFont.className}>
-            <body className="bg-aw-background bg-cover bg-fixed bg-center text-aw-white text-md 
-                grid grid-rows-[min-content_auto_min-content_repeat(999,_0px)] min-h-screen">
+            <body className="bg-aw-background bg-cover bg-fixed bg-center text-aw-white text-lg
+                grid grid-rows-[auto_min-content_repeat(999,_0px)] min-h-screen">
                 <Header />
                 
-                <main className="p-6 lg:w-2/3 lg:mx-auto">
+                <main className="p-8 mt-16 lg:w-fit lg:mx-auto">
                     {children}
                 </main>
                 

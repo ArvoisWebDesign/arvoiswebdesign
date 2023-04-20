@@ -40,9 +40,7 @@ export default function Nav() {
         <nav className="hidden lg:grid lg:grid-flow-col lg:auto-cols-fr lg:col-span-1 col-span-3 text-center animate-opacity" id="nav">
             {navLinks.map((navLink) => {
                 const isActive = navLink.href === "/" + activeHref
-                console.log(navLink.href)
-                console.log("/" + activeHref)
-
+                
                 return (
                     <Link
                         key={navLink.key}

@@ -16,8 +16,9 @@ function handleToggleNav() {
 
 export default function Header() {
     return (
-        <header className="animate-opacity grid grid-cols-[1fr_auto_1fr] min-h-fit 
-            bg-aw-dark bg-opacity-50 shadow-[0_0_3rem_-1rem_#00010D]">
+        <header className="animate-opacity grid grid-cols-[1fr_auto_1fr]
+            bg-aw-dark bg-opacity-50 shadow-aw-dark-8 backdrop-blur-lg
+            fixed w-screen min-h-16">
             <button 
                 className="lg:hidden w-fit p-4 text-aw-white hover:bg-aw-greyblue animate-opacity" 
                 id="toggleNav" type="button" aria-label="navigation toggler for mobile users" onClick={handleToggleNav}>
