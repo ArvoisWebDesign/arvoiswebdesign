@@ -27,13 +27,13 @@ export default function Productions() {
                     {/*card*/}
                     return (
                         <div key={production.key} 
-                            className="max-w-xl rounded-2xl flex flex-col gap-4 p-4
+                            className="w-full lg:max-w-md rounded-2xl flex flex-col gap-4 p-4
                                 bg-aw-dark bg-opacity-50 shadow-aw-dark-8">
                             <Image 
                                 src={production.previewImg.src} 
                                 alt={production.previewImg.alt}
-                                width={720}
-                                height={556}
+                                width={1080}
+                                height={720}
                                 className="rounded-lg shadow-aw-dark-8" priority />
 
                             {/*tags*/}
