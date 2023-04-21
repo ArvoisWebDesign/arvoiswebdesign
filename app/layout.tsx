@@ -23,13 +23,13 @@ export const metadata:Metadata = {
     creator: "Arvois Webdesign",
     publisher: "Arvois Webdesign",
     icons: {
-        icon: "./public/icon-32x32.png",
-        shortcut: "./public/icon-128x128.png",
-        apple: "./public/icon-128x128.png",
+        icon: "/favicon.ico",
+        shortcut: "/icon-128x128.png",
+        apple: "/icon-128x128.png",
         other: [
             {
                 rel: "apple-touch-icon-precomposed",
-                url: "./public/icon-128x128.png"
+                url: "/icon-128x128.png"
             }
         ]
     },
@@ -48,7 +48,7 @@ export const metadata:Metadata = {
         title: "Arvois Webdesign",
         description: "Développeur web fullstack",
         creator: "@slvv808",
-        images: ["https://arvoiswebdesign.vercel.app/opengraph-image.png"]
+        images: ["https://arvoiswebdesign.vercel.app/opengraph-image.webp"]
     }
 }
 

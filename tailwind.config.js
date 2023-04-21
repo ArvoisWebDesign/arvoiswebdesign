@@ -21,8 +21,12 @@ module.exports = {
                 "6xl": "6rem",
             },
             boxShadow: {
-                "aw-dark-4": "0 0 1rem -0.5rem #00010D",
-                "aw-dark-8": "0 0 2rem -1rem #00010D",
+                "aw-dark-4": "0 0 1rem -0.25rem #00010D",
+                "aw-dark-8": "0 0 2rem -0.5rem #00010D"
+            },
+            dropShadow: {
+                "aw-dark-4": "0 0 1rem #00010D",
+                "aw-dark-8": "0 0 2rem #00010D"
             },
             backgroundImage: {
                 "aw-background": "url('../public/bg-resized-blurred.webp')"

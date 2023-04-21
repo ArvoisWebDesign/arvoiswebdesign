@@ -6,29 +6,29 @@ import { useSelectedLayoutSegments } from "next/navigation"
 import { handleToggleNav } from "@/lib/scripts"
 
 type NavLink = {
-    key:number;
+    key:string;
     name:string;
     href:string;
 }
 
 const navLinks: NavLink[] = [
     {
-        key: 1,
+        key: "home",
         name: "Accueil",
         href: "/"
     },
     {
-        key: 2,
-        name: "CV",
-        href: "/cv"
-    },
-    {
-        key: 3,
+        key: "productions",
         name: "Réalisations",
         href: "/productions"
     },
     {
-        key: 4,
+        key: "cv",
+        name: "Curriculum Vitae",
+        href: "/cv"
+    },
+    {
+        key: "contact",
         name: "Contact",
         href: "/contact"
     }
@@ -38,7 +38,8 @@ export default function Nav() {
     const activeHref = useSelectedLayoutSegments()
 
     return (
-        <nav className="hidden lg:grid lg:grid-flow-col lg:auto-cols-fr lg:col-span-1 col-span-3 text-center animate-opacity" id="nav">
+        <nav className="hidden lg:grid lg:grid-flow-col lg:auto-cols-fr 
+            lg:col-span-1 col-span-3 text-center animate-opacity" id="nav">
             {navLinks.map((navLink) => {
                 const isActive = navLink.href === "/" + activeHref
                 
@@ -48,7 +49,8 @@ export default function Nav() {
                         href={navLink.href}
                         onClick={handleToggleNav}
                         className={clsx(
-                            "block lg:inline-block font-bold text-lg m-2 px-4 py-2 rounded-lg hover:bg-aw-greyblue",
+                            "block lg:inline-block font-bold text-lg m-2 px-4 py-2 ",
+                            "rounded-lg hover:bg-aw-greyblue drop-shadow-aw-dark-4 ",
                             { "bg-aw-greyblue": isActive })}>
                         {navLink.name}
                     </Link>

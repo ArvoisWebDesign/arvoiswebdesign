@@ -31,10 +31,9 @@ export default function Footer() {
                                     href={lienFooter.href}
                                     target="_blank"
                                     className="font-bold flex flex-row 
-                                        w-fit mx-auto px-2 py-1 
-                                        items-center align-middle
-                                        rounded-lg border-2 border-aw-greyblue 
-                                        bg-aw-greyblue bg-opacity-10 hover:bg-opacity-100">
+                                        w-fit mx-auto px-2 py-1 items-center align-middle
+                                        rounded-lg border-2 border-aw-greyblue drop-shadow-aw-dark-4
+                                        bg-aw-greyblue bg-opacity-25 hover:bg-opacity-100">
                                     {lienFooter.reactIcon}&nbsp;{lienFooter.name}
                                 </Link>
                             </li>
@@ -47,13 +46,13 @@ export default function Footer() {
                     <li className="font-bold">Tech stack du site</li>
                     <li>NextJS 13.X</li>
                     <li>TailwindCSS</li>
-                    <li className="p-1">
+                    <li>
                         <Link 
                             href={"https://github.com/ArvoisWebDesign/arvoiswebdesign"}
                             target="_blank"
                             className="inline-block font-bold px-2 py-1 rounded-lg
-                                border-2 border-aw-greyblue bg-aw-greyblue bg-opacity-10
-                                hover:bg-opacity-100">
+                                border-2 border-aw-greyblue bg-aw-greyblue bg-opacity-25
+                                hover:bg-opacity-100 drop-shadow-aw-dark-4">
                             Code open source 💗
                         </Link>
                     </li>
