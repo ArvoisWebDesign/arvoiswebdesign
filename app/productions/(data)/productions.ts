@@ -87,6 +87,29 @@ export const productions:Production[] = [
         ]
     },
     {
+        key: "portfolio",
+        name: "Portfolio",
+        href: "https://arvoiswebdesign.vercel.app",
+        github: "https://github.com/ArvoisWebDesign/arvoiswebdesign",
+        description: "Site regroupant mes réalisations, un description de leur stack technique, mon cv, etc...",
+        previewImg: {
+            src: "/productions/arvoiswebdesign-cv.JPG",
+            alt: "Portfolio preview"
+        },
+        mobileImg: {
+            src: "/productions/arvoiswebdesign-cv-mobile.JPG",
+            alt: "Portfolio responsive preview"
+        },
+        tags: [
+            tags.nextjs13app,
+            tags.tailwindcss,
+            tags.typescript,
+            tags.turbopack,
+            tags.verceldeploy,
+            tags.github
+        ]
+    },
+    {
         key: "awmm",
         name: "AW Mouse Management",
         href: "https://aw-mouse-management.azurewebsites.net",

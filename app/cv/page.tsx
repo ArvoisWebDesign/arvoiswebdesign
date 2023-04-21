@@ -84,7 +84,7 @@ export default function Cv() {
                             <Tooltip>
                                 <TooltipTrigger><FaQuestionCircle /></TooltipTrigger>
                                 <TooltipContent>
-                                    <p>Comme le niveau de rareté dans les jeux :</p>
+                                    <p>Comme le niveau de rareté dans les jeux</p>
                                     <p className="text-center">
                                         <BsFillSquareFill className="text-orange-500 inline"/>
                                         &nbsp;<FaGreaterThan className="inline" />&nbsp;
