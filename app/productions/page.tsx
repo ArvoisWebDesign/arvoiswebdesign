@@ -3,6 +3,7 @@ import Link from "next/link"
 import { productions } from "./(data)/productions"
 import { FaGithub } from "react-icons/fa"
 import { TbWorldWww } from "react-icons/tb"
+import BtnGithub from "app/(components)/btnGithub"
 
 export default function Productions() {
     return (
@@ -10,15 +11,9 @@ export default function Productions() {
             <div className="flex flex-row mb-8">
                 <h1 className="font-black text-3xl">Réalisations</h1>
 
-                <Link href="https://github.com/ArvoisWebDesign" 
-                    target="_blank"
-                    className="font-bold flex flex-row 
-                    w-fit ml-auto px-2 py-1 items-center align-middle
-                    rounded-lg border-2 border-aw-greyblue shadow-aw-dark-8
-                    bg-aw-greyblue bg-opacity-10 hover:bg-opacity-100"
-                    title="GitHub">
-                    <FaGithub /><span className="hidden sm:inline">&nbsp;GitHub</span>
-                </Link>
+                <div className="ml-auto">
+                    <BtnGithub />
+                </div>
             </div>
             
             {/*cards container*/}
@@ -63,7 +58,10 @@ export default function Productions() {
                                             flex flex-row justify-center items-center
                                             rounded-lg border-2 border-aw-greyblue drop-shadow-aw-dark-4
                                             bg-aw-greyblue bg-opacity-10 hover:bg-opacity-100">
-                                        <TbWorldWww />&nbsp;Site
+                                        <TbWorldWww />
+                                        <span className="pl-2">
+                                            Site
+                                        </span>
                                     </Link>
                                 }
                                 {production.github != "" && 
@@ -72,7 +70,10 @@ export default function Productions() {
                                             flex flex-row justify-center items-center
                                             rounded-lg border-2 border-aw-greyblue drop-shadow-aw-dark-4
                                             bg-aw-greyblue bg-opacity-10 hover:bg-opacity-100">
-                                        <FaGithub />&nbsp;GitHub
+                                        <FaGithub />
+                                        <span className="pl-2">
+                                            GitHub
+                                        </span>
                                     </Link>
                                 }
                             </div>

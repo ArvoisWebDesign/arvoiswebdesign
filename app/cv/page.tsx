@@ -1,8 +1,6 @@
-import Link from "next/link"
-import { skills } from "./(data)/skills"
-import { FiDownload } from "react-icons/fi"
 import { BsFillSquareFill } from "react-icons/bs"
-import { FaQuestionCircle, FaGreaterThan, FaLinkedin } from "react-icons/fa"
+import { FaQuestionCircle, FaGreaterThan } from "react-icons/fa"
+
 import {
     Tooltip,
     TooltipContent,
@@ -10,31 +8,20 @@ import {
     TooltipTrigger
 } from "@/components/ui/tooltip"
 
+import { skills } from "./(data)/skills"
+import BtnDownloadCv from "app/(components)/btnDownloadCv"
+import BtnLinkedin from "app/(components)/btnLinkedin"
+
 export default function Cv() {
     return (
         <>
-            <div className="flex flex-row mb-8">
+            <div className="flex flex-row flex-wrap mb-8 gap-8">
                 <h1 className="font-black text-3xl">Curriculum Vitae</h1>
 
                 <div className="w-fit flex flex-row flex-wrap gap-4 ml-auto">
-                    <Link href="/cv.pdf" download target="_blank"
-                        className="font-bold flex flex-row 
-                        w-fit ml-auto px-2 py-1 items-center align-middle
-                        rounded-lg border-2 border-aw-greyblue drop-shadow-aw-dark-4
-                        bg-aw-greyblue bg-opacity-25 hover:bg-opacity-100"
-                        title="Télécharger le CV">
-                        <FiDownload /><span className="hidden md:inline">&nbsp;Télécharger le CV</span>
-                    </Link>
+                    <BtnDownloadCv />
 
-                    <Link href="https://www.linkedin.com/in/lucas-arvois/"
-                        target="_blank"
-                        className="font-bold flex flex-row 
-                        w-fit ml-auto px-2 py-1 items-center align-middle
-                        rounded-lg border-2 border-aw-greyblue drop-shadow-aw-dark-4
-                        bg-aw-greyblue bg-opacity-25 hover:bg-opacity-100"
-                        title="Linkedin">
-                        <FaLinkedin /><span className="hidden md:inline">&nbsp;Linkedin</span>
-                    </Link>
+                    <BtnLinkedin />
                 </div>
             </div>
             

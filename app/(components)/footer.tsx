@@ -1,20 +1,6 @@
 import Link from "next/link"
-import { FaLinkedin, FaGithub } from "react-icons/fa"
-
-const liensFooter = [
-    {
-        key: "github",
-        href: "https://github.com/ArvoisWebDesign",
-        reactIcon: <FaGithub />,
-        name: "GitHub"
-    },
-    {
-        key: "linkedin",
-        href: "https://www.linkedin.com/in/lucas-arvois/",
-        reactIcon: <FaLinkedin />,
-        name: "Linkedin"
-    }
-]
+import BtnLinkedin from "./btnLinkedin"
+import BtnGithub from "./btnGithub"
 
 export default function Footer() {
     return (
@@ -24,28 +10,16 @@ export default function Footer() {
             <div>
                 <p className="font-bold">Liens</p>
                 <ul>
-                    {liensFooter.map((lienFooter) => {
-                        return (
-                            <li key={lienFooter.key} className="p-1">
-                                <Link 
-                                    href={lienFooter.href}
-                                    target="_blank"
-                                    className="font-bold flex flex-row 
-                                        w-fit mx-auto px-2 py-1 items-center align-middle
-                                        rounded-lg border-2 border-aw-greyblue drop-shadow-aw-dark-4
-                                        bg-aw-greyblue bg-opacity-25 hover:bg-opacity-100">
-                                    {lienFooter.reactIcon}&nbsp;{lienFooter.name}
-                                </Link>
-                            </li>
-                        )
-                    })}
+                    <li className="m-1"><span className="inline-block mx-auto"><BtnLinkedin /></span></li>
+                    <li className="m-1"><span className="inline-block mx-auto"><BtnGithub /></span></li>
                 </ul>
             </div>
             <div>
                 <ul>
                     <li className="font-bold">Tech stack du site</li>
-                    <li>NextJS 13.X</li>
+                    <li>NextJS 13.3.1</li>
                     <li>TailwindCSS</li>
+                    <li>Typescript</li>
                     <li>
                         <Link 
                             href={"https://github.com/ArvoisWebDesign/arvoiswebdesign"}

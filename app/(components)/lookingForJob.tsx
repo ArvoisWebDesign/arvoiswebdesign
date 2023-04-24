@@ -1,5 +1,6 @@
-import Link from "next/link"
-import { FaLinkedin } from "react-icons/fa"
+import BtnDownloadCv from "./btnDownloadCv"
+import BtnGithub from "./btnGithub"
+import BtnLinkedin from "./btnLinkedin"
 
 export default function LookingForJob() {
     return (
@@ -7,26 +8,26 @@ export default function LookingForJob() {
             bg-aw-dark bg-opacity-50 shadow-aw-dark-8">
             <h2 className="font-bold text-2xl text-center">Vous êtes recruteur?</h2>
             
-            <div>
-                <p className="font-bold text-center">Actuellement en recherche sur Strasbourg!</p>
-                <ul className="text-muted-foreground list-disc list-inside">
-                    <li>Autour de 30k€ brut par an</li>
-                    <li>Disponible ASAP</li>
-                    <li>Peu importe votre stack technique</li>
-                    <li>Le télétravail est un plus</li>
-                    <li>Perso je bois pas de café!</li>
-                </ul>
-            </div>
+            <p className="font-bold text-center">
+                Actuellement en recherche d'un CDI en développement web&nbsp;!
+            </p>
+            
+            <ul className="text-muted-foreground list-disc list-inside">
+                <li>Strasbourg + périphérie : télétravail facultatif</li>
+                <li>Reste de la France : télétravail total</li>
+                <li>Disponible ASAP</li>
+                <li>ASP.NET ou NextJS</li>
+                <li>Mais en vrai peu importe votre stack technique</li>
+                <li>Perso je bois pas de café !</li>
+            </ul>
 
-            <Link 
-                href="https://www.linkedin.com/in/lucas-arvois/"
-                target="_blank"
-                className="font-bold text-center flex flex-row 
-                    w-fit mx-auto px-2 py-1 items-center align-middle
-                    rounded-lg border-2 border-aw-greyblue drop-shadow-aw-dark-4
-                    bg-aw-greyblue bg-opacity-25 hover:bg-opacity-100">
-                <FaLinkedin />&nbsp;Linkedin
-            </Link>
+            <div className="w-fit flex flex-row flex-wrap gap-4">
+                <BtnDownloadCv />
+
+                <BtnLinkedin />
+
+                <BtnGithub />
+            </div>
         </div>
     )
 }
