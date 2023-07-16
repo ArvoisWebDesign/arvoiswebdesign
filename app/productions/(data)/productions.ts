@@ -112,7 +112,7 @@ export const productions:Production[] = [
     {
         key: "awmm",
         name: "AW Mouse Management",
-        href: "https://aw-mouse-management.azurewebsites.net",
+        href: "",
         github: "https://github.com/ArvoisWebDesign/aw-mouse-management",
         description: "Site test fullstack ASP.NET Core 7 (MVC) avec base de donnée SQL Server",
         previewImg: {
