@@ -1,8 +1,131 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@plugin "tailwindcss-animate";
+
+@theme inline {
+    --color-aw-dark: var(--aw-dark);
+    --color-aw-darkblue: var(--aw-darkblue);
+    --color-aw-greyblue: var(--aw-greyblue);
+    --color-aw-purple: var(--aw-purple);
+    --color-aw-grey: var(--aw-grey);
+    --color-aw-white: var(--aw-white);
+
+    --color-border: hsl(var(--border));
+    --color-input: hsl(var(--input));
+    --color-ring: hsl(var(--ring));
+    --color-background: hsl(var(--background));
+    --color-foreground: hsl(var(--foreground));
+    --color-primary: hsl(var(--primary));
+    --color-primary-foreground: hsl(var(--primary-foreground));
+    --color-secondary: hsl(var(--secondary));
+    --color-secondary-foreground: hsl(var(--secondary-foreground));
+    --color-destructive: hsl(var(--destructive));
+    --color-destructive-foreground: hsl(var(--destructive-foreground));
+    --color-muted: hsl(var(--muted));
+    --color-muted-foreground: hsl(var(--muted-foreground));
+    --color-accent: hsl(var(--accent));
+    --color-accent-foreground: hsl(var(--accent-foreground));
+    --color-popover: hsl(var(--popover));
+    --color-popover-foreground: hsl(var(--popover-foreground));
+    --color-card: hsl(var(--card));
+    --color-card-foreground: hsl(var(--card-foreground));
+
+    --background-image-aw-background: url("/bg-resized-blurred.webp");
+
+    --radius-sm: calc(var(--radius) - 4px);
+    --radius-md: calc(var(--radius) - 2px);
+    --radius-lg: var(--radius);
+
+    --shadow-aw-dark-4: 0 0 1rem -0.25rem #00010d;
+    --shadow-aw-dark-8: 0 0 2rem -0.5rem #00010d;
+    --drop-shadow-aw-dark-4: 0 0 1rem #00010d;
+    --drop-shadow-aw-dark-8: 0 0 2rem #00010d;
+
+    --leading-2xl: 2rem;
+    --leading-4xl: 4rem;
+    --leading-6xl: 6rem;
+
+    --animate-accordion-down: accordion-down 0.2s ease-out;
+    --animate-accordion-up: accordion-up 0.2s ease-out;
+    --animate-fadeInLeft: fadeInLeft 0.5s ease-in-out;
+    --animate-fadeInTop: fadeInTop 0.5s ease-in-out;
+    --animate-fadeInBottom: fadeInBottom 0.5s ease-in-out;
+    --animate-opacity: opacity 0.5s ease-in-out;
+}
+
+@keyframes accordion-down {
+    from {
+        height: 0;
+    }
+    to {
+        height: var(--radix-accordion-content-height);
+    }
+}
+
+@keyframes accordion-up {
+    from {
+        height: var(--radix-accordion-content-height);
+    }
+    to {
+        height: 0;
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        margin-left: -100px;
+        margin-right: 100px;
+    }
+    to {
+        opacity: 1;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+@keyframes fadeInTop {
+    from {
+        opacity: 0;
+        margin-top: -100px;
+        margin-bottom: 100px;
+    }
+    to {
+        opacity: 1;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
+@keyframes fadeInBottom {
+    from {
+        opacity: 0;
+        margin-bottom: -100px;
+        margin-top: 100px;
+    }
+    to {
+        opacity: 1;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+}
+
+@keyframes opacity {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
 
 @layer base {
+    * {
+        box-sizing: border-box;
+        max-width: 100vw;
+        padding: 0;
+        margin: 0;
+    }
+
     :root {
         --background: 0 0% 100%;
         --foreground: 222.2 47.4% 11.2%;
@@ -35,11 +158,12 @@
 
         --radius: 0.5rem;
 
-        --aw-dark: "#00010D";
-        --aw-darkblue: "#010D26";
-        --aw-greyblue: "#163040";
-        --aw-grey: "#262626";
-        --aw-white: "#F2F2F2";
+        --aw-dark: #00010d;
+        --aw-darkblue: #010d26;
+        --aw-greyblue: #163040;
+        --aw-purple: #9b5ce6;
+        --aw-grey: #262626;
+        --aw-white: #f2f2f2;
     }
 
     .dark {
@@ -84,13 +208,6 @@
         @apply bg-background text-foreground;
         font-feature-settings: 'rlig' 1, 'calt' 1;
     }
-}
-
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    max-width: 100vw;
 }
 
 a {

@@ -24,6 +24,10 @@ const tags = {
         key: "nextjs13app",
         name: "NextJS 13 (appDir)"
     },
+    nextjs16app: {
+        key: "nextjs16app",
+        name: "NextJS 16 (App Router)"
+    },
     tailwindcss: {
         key: "tailwindcss",
         name: "TailwindCSS"
@@ -101,7 +105,7 @@ export const productions:Production[] = [
             alt: "Portfolio responsive preview"
         },
         tags: [
-            tags.nextjs13app,
+            tags.nextjs16app,
             tags.tailwindcss,
             tags.typescript,
             tags.turbopack,

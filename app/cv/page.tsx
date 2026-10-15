@@ -28,7 +28,7 @@ export default function Cv() {
             <div className="grid grid-flow-row lg:grid-flow-col grid-cols-auto gap-8">
                 <div className="flex flex-col gap-8">
                     <div className="p-4 rounded-2xl flex flex-col 
-                        bg-aw-dark bg-opacity-50 shadow-aw-dark-8">
+                        bg-aw-dark/50 shadow-aw-dark-8">
                         <h2 className="font-bold text-2xl mb-4">
                             Experiences professionnelles
                         </h2>
@@ -36,13 +36,13 @@ export default function Cv() {
                             <h3 className="font-bold">2 ans - Développeur fullstack</h3>
                             <ul className="text-muted-foreground">
                                 <li>Axon Cable</li>
-                                <li>Développement de modules pour l'ERP sous ASP.NET</li>
+                                <li>Développement de modules pour l&apos;ERP sous ASP.NET</li>
                             </ul>
                         </div>
                     </div>
 
                     <div className="p-4 rounded-2xl flex flex-col 
-                        bg-aw-dark bg-opacity-50 shadow-aw-dark-8">
+                        bg-aw-dark/50 shadow-aw-dark-8">
                         <h2 className="font-bold text-2xl mb-4">
                             Formations
                         </h2>
@@ -64,7 +64,7 @@ export default function Cv() {
                 </div>
 
                 <div className="flex flex-col gap-4 p-4
-                    rounded-2xl bg-aw-dark bg-opacity-50 shadow-aw-dark-8">
+                    rounded-2xl bg-aw-dark/50 shadow-aw-dark-8">
                     <h2 className="font-bold text-2xl">
                         Compétences&nbsp;
                         <TooltipProvider>
@@ -92,7 +92,7 @@ export default function Cv() {
                                 <span key={skill.key}
                                     className={"rounded-full text-sm font-bold " 
                                         + skill.cssClass
-                                        + " bg-opacity-10 px-2 py-1 drop-shadow-aw-dark-4"}>
+                                        + " px-2 py-1 drop-shadow-aw-dark-4"}>
                                     {skill.name}
                                 </span>
                             )
@@ -110,9 +110,9 @@ export default function Cv() {
                     <div>
                         <h3 className="font-bold">6 mois de legacy code</h3>
                         <ul className="text-muted-foreground">
-                            <li>Optimisation d'execution (rapidité des requêtes, données plus légères,
+                            <li>Optimisation d&apos;execution (rapidité des requêtes, données plus légères,
                                 modules asynchrones, refactorisation du code...)</li>
-                            <li>Amélioration de l'UX/UI, respect de la charte graphique</li>
+                            <li>Amélioration de l&apos;UX/UI, respect de la charte graphique</li>
                         </ul>
                         
                     </div>

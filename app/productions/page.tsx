@@ -23,7 +23,7 @@ export default function Productions() {
                     return (
                         <div key={production.key} 
                             className="w-full lg:max-w-md rounded-2xl flex flex-col gap-4 p-4
-                                bg-aw-dark bg-opacity-50 shadow-aw-dark-8">
+                                bg-aw-dark/50 shadow-aw-dark-8">
                             <Image 
                                 src={production.previewImg.src} 
                                 alt={production.previewImg.alt}
@@ -36,7 +36,7 @@ export default function Productions() {
                                 {production.tags.map((tag) => {
                                     return (
                                         <span className="rounded-full text-aw-purple text-sm font-bold
-                                            bg-aw-purple bg-opacity-10 px-2 py-1 drop-shadow-aw-dark-4" 
+                                            bg-aw-purple/10 px-2 py-1 drop-shadow-aw-dark-4"
                                             key={tag.key}>
                                             {tag.name}
                                         </span>
@@ -57,7 +57,7 @@ export default function Productions() {
                                         className="px-2 py-1 font-bold text-lg text-center leading-8 grow
                                             flex flex-row justify-center items-center
                                             rounded-lg border-2 border-aw-greyblue drop-shadow-aw-dark-4
-                                            bg-aw-greyblue bg-opacity-10 hover:bg-opacity-100">
+                                            bg-aw-greyblue/10 hover:bg-aw-greyblue">
                                         <TbWorldWww />
                                         <span className="pl-2">
                                             Site
@@ -69,7 +69,7 @@ export default function Productions() {
                                         className="px-2 py-1 font-bold text-lg text-center leading-8 grow
                                             flex flex-row justify-center items-center
                                             rounded-lg border-2 border-aw-greyblue drop-shadow-aw-dark-4
-                                            bg-aw-greyblue bg-opacity-10 hover:bg-opacity-100">
+                                            bg-aw-greyblue/10 hover:bg-aw-greyblue">
                                         <FaGithub />
                                         <span className="pl-2">
                                             GitHub

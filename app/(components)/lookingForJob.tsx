@@ -5,11 +5,11 @@ import BtnLinkedin from "./btnLinkedin"
 export default function LookingForJob() {
     return (
         <div className="rounded-2xl p-4 flex flex-col gap-4
-            bg-aw-dark bg-opacity-50 shadow-aw-dark-8">
+            bg-aw-dark/50 shadow-aw-dark-8">
             <h2 className="font-bold text-2xl text-center">Vous êtes recruteur?</h2>
             
             <p className="font-bold text-center">
-                Actuellement en recherche d'un CDI en développement web&nbsp;!
+                Actuellement en recherche d&apos;un CDI en développement web&nbsp;!
             </p>
             
             <ul className="text-muted-foreground list-disc list-inside">

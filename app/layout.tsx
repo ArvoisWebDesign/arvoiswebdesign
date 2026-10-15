@@ -4,7 +4,7 @@ import "./globals.css"
 
 import React from "react"
 
-import { Metadata } from "next"
+import type { Metadata, Viewport } from "next"
 import { Montserrat } from "next/font/google"
 import Header from "./(components)/header"
 import Footer from "./(components)/footer"
@@ -32,10 +32,6 @@ export const metadata:Metadata = {
                 url: "/icon-128x128.png"
             }
         ]
-    },
-    viewport: {
-        width: "device-width",
-        initialScale: 1
     },
     openGraph: {
         title: "Arvois Webdesign",
@@ -65,14 +61,19 @@ export const metadata:Metadata = {
     }
 }
 
+export const viewport: Viewport = {
+    width: "device-width",
+    initialScale: 1
+}
+
 export default function RootLayout({ children } : { children: React.ReactNode }) {
     return (
         <html lang="fr" className={importedFont.className}>
             <body className="bg-aw-background bg-cover bg-fixed bg-center text-aw-white text-lg
-                grid grid-rows-[auto_min-content_repeat(999,_0px)] min-h-screen">
+                grid grid-rows-[auto_min-content_repeat(999,0px)] min-h-screen">
                 <Header />
                 
-                <main className="p-8 mt-16 w-fit mx-auto">
+                <main className="p-8 mt-16">
                     {children}
                 </main>
                 

@@ -8,7 +8,7 @@ export default function BtnLinkedin() {
             className="font-bold flex flex-row 
                 w-fit px-2 py-1 items-center align-middle
                 rounded-lg border-2 border-aw-greyblue drop-shadow-aw-dark-4
-                bg-aw-greyblue bg-opacity-25 hover:bg-opacity-100"
+                bg-aw-greyblue/25 hover:bg-aw-greyblue"
             title="Linkedin">
             <FaLinkedin />
             <span className="pl-2">

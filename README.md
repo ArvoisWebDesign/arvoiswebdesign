@@ -1,24 +1,26 @@
-# Next.js + Turbopack App Directory Playground
+# Arvois Webdesign
 
-[Turbopack](https://turbo.build/pack) is a new incremental bundler optimized for JavaScript and TypeScript, written in Rust by the creators of Webpack and Next.js at [Vercel](https://vercel.com). On large applications Turbopack updates 10x faster than Vite and 700x faster than Webpack ([benchmark](https://turbo.build/pack/docs/benchmarks)). For the biggest applications the difference grows even more stark with updates up to 20x faster than Vite.
+Personal portfolio built with Next.js 16, the App Router, and Tailwind CSS 4.
 
-This playground is a mirror of the [Next.js v13 App Directory Playground](https://github.com/vercel/app-playground), but uses Turbopack as the Next.js development server (`next dev --turbo`).
+## Requirements
 
-**As a reminder, Turbopack is currently in alpha and not yet ready for production. We appreciate your ongoing support as we work to make it ready for everyone.**
+- Node.js 24 or later for all project commands. Next.js itself requires Node.js 20.9 or later; ESLint 10, used by the lint command, requires Node.js 24 or later.
+- Tailwind CSS 4 targets Safari 16.4+, Chrome 111+, and Firefox 128+.
 
-## Running Locally
+## Running locally
 
-1. Install dependencies: `yarn`
-1. Start the dev server: `yarn dev`
+Install dependencies and start the development server:
 
-**Note:** The playground uses [Tailwind CSS](https://tailwindcss.com) via [PostCSS](https://turbo.build/pack/docs/features/css#postcss).
+```bash
+npm install
+npm run dev
+```
 
-For more information, see: https://turbo.build/pack/docs/features/css#tailwind-css
+The application is available at http://localhost:3000.
 
-## Documentation
+## Project commands
 
-https://nextjs.link/with-turbopack
-
-## Providing Feedback
-
-https://nextjs.link/turbopack-feedback
+- `npm run build` creates a production build.
+- `npm run start` serves the production build.
+- `npm run lint` runs ESLint.
+- `npm run format` formats JavaScript, TypeScript, and Markdown files with Prettier.

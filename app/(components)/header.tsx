@@ -8,7 +8,7 @@ import Nav from "./nav"
 export default function Header() {
     return (
         <header className="animate-opacity grid grid-cols-[1fr_auto_1fr]
-            bg-aw-dark bg-opacity-50 shadow-aw-dark-8 
+            bg-aw-dark/50 shadow-aw-dark-8
             backdrop-blur-xl fixed z-50 w-screen min-h-16">
             <button 
                 className="lg:hidden w-fit p-4 text-aw-white hover:bg-aw-greyblue animate-opacity" 
