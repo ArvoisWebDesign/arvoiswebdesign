@@ -3,7 +3,7 @@ import Link from "next/link"
 import { productions } from "./(data)/productions"
 import { FaGithub } from "react-icons/fa"
 import { TbWorldWww } from "react-icons/tb"
-import BtnGithub from "app/(components)/btnGithub"
+import BtnGithub from "../(components)/btnGithub"
 
 export default function Productions() {
     return (

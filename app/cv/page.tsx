@@ -9,8 +9,8 @@ import {
 } from "@/components/ui/tooltip"
 
 import { skills } from "./(data)/skills"
-import BtnDownloadCv from "app/(components)/btnDownloadCv"
-import BtnLinkedin from "app/(components)/btnLinkedin"
+import BtnDownloadCv from "../(components)/btnDownloadCv"
+import BtnLinkedin from "../(components)/btnLinkedin"
 
 export default function Cv() {
     return (
