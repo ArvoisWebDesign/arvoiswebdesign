@@ -17,7 +17,7 @@ export default function Mail() {
             <button onClick={handleShowMail} id="btnMail"
                 className="font-bold px-2 py-1
                     rounded-lg border-2 border-aw-greyblue drop-shadow-aw-dark-4
-                    bg-aw-greyblue/25 hover:bg-aw-greyblue">
+                    bg-aw-greyblue/25 hover:bg-aw-greyblue/50">
                 Afficher adresse mail
             </button>
             <p id="mail"></p>

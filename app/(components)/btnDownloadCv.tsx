@@ -9,7 +9,7 @@ export default function BtnDownloadCv() {
             className="font-bold flex flex-row 
                 w-fit px-2 py-1 items-center align-middle
                 rounded-lg border-2 border-aw-greyblue drop-shadow-aw-dark-4
-                bg-aw-greyblue/25 hover:bg-aw-greyblue"
+                bg-aw-greyblue/25 hover:bg-aw-greyblue/50"
             title="Télécharger le CV">
             <FiDownload />
             <span className="pl-2">

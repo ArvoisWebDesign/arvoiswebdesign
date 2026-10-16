@@ -57,7 +57,7 @@ export default function Productions() {
                                         className="px-2 py-1 font-bold text-lg text-center leading-8 grow
                                             flex flex-row justify-center items-center
                                             rounded-lg border-2 border-aw-greyblue drop-shadow-aw-dark-4
-                                            bg-aw-greyblue/10 hover:bg-aw-greyblue">
+                                            bg-aw-greyblue/10 hover:bg-aw-greyblue/50">
                                         <TbWorldWww />
                                         <span className="pl-2">
                                             Site
@@ -69,7 +69,7 @@ export default function Productions() {
                                         className="px-2 py-1 font-bold text-lg text-center leading-8 grow
                                             flex flex-row justify-center items-center
                                             rounded-lg border-2 border-aw-greyblue drop-shadow-aw-dark-4
-                                            bg-aw-greyblue/10 hover:bg-aw-greyblue">
+                                            bg-aw-greyblue/10 hover:bg-aw-greyblue/50">
                                         <FaGithub />
                                         <span className="pl-2">
                                             GitHub

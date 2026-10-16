@@ -26,7 +26,7 @@ export default function Footer() {
                             target="_blank"
                             className="inline-block font-bold px-2 py-1 rounded-lg
                                 border-2 border-aw-greyblue bg-aw-greyblue/25
-                                hover:bg-aw-greyblue drop-shadow-aw-dark-4">
+                                hover:bg-aw-greyblue/50 drop-shadow-aw-dark-4">
                             Code open source 💗
                         </Link>
                     </li>

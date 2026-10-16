@@ -50,8 +50,9 @@ export default function Nav() {
                         onClick={handleToggleNav}
                         className={clsx(
                             "block lg:inline-block font-bold text-lg m-2 px-4 py-2 ",
-                            "rounded-lg hover:bg-aw-greyblue drop-shadow-aw-dark-4 ",
-                            { "bg-aw-greyblue": isActive })}>
+                            "rounded-full drop-shadow-aw-dark-4",
+                            "hover:bg-aw-greyblue/50",
+                            { "bg-aw-greyblue/50": isActive })}>
                         {navLink.name}
                     </Link>
                 )

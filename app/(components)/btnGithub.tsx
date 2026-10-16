@@ -8,7 +8,7 @@ export default function BtnGithub() {
             className="font-bold flex flex-row 
                 w-fit px-2 py-1 items-center align-middle
                 rounded-lg border-2 border-aw-greyblue shadow-aw-dark-8
-                bg-aw-greyblue/10 hover:bg-aw-greyblue"
+                bg-aw-greyblue/10 hover:bg-aw-greyblue/50"
             title="GitHub">
             <FaGithub />
             <span className="pl-2">
