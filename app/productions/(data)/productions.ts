@@ -26,7 +26,7 @@ const tags = {
     },
     nextjs16app: {
         key: "nextjs16app",
-        name: "NextJS 16 (App Router)"
+        name: "NextJS 16"
     },
     tailwindcss: {
         key: "tailwindcss",
