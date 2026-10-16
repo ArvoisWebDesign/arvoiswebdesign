@@ -3,7 +3,7 @@ import { FiDownload } from "react-icons/fi"
 
 export default function BtnDownloadCv() {
     return (
-        <Link href="/cv.pdf" 
+        <Link href="/CV_Lucas_Arvois_developpeur_fullstack.pdf" 
             download 
             target="_blank"
             className="font-bold flex flex-row 
