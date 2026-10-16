@@ -7,8 +7,8 @@ import BtnGithub from "../(components)/btnGithub"
 
 export default function Productions() {
     return (
-        <>
-            <div className="flex flex-row mb-8">
+        <div className="flex flex-col gap-8 w-fit mx-auto">
+            <div className="flex flex-row">
                 <h1 className="font-black text-3xl">Réalisations</h1>
 
                 <div className="ml-auto">
@@ -81,6 +81,6 @@ export default function Productions() {
                     )
                 })}
             </div>
-        </>
+        </div>
     )
 }

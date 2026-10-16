@@ -7,7 +7,7 @@ import Nav from "./nav"
 
 export default function Header() {
     return (
-        <header className="fixed z-50 w-screen min-h-16 p-4">
+        <header className="fixed z-50 min-h-16 p-8 w-full">
             <div className="backdrop-blur-xl animate-opacity grid grid-cols-[1fr_auto_1fr]
                 bg-aw-dark/50 shadow-aw-dark-8
                 lg:rounded-full rounded-2xl">

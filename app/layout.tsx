@@ -73,7 +73,7 @@ export default function RootLayout({ children } : { children: React.ReactNode })
                 grid grid-rows-[auto_min-content_repeat(999,0px)] min-h-screen">
                 <Header />
                 
-                <main className="p-8 mt-16">
+                <main className="p-8 mt-24">
                     {children}
                 </main>
                 
